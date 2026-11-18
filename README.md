@@ -1,76 +1,75 @@
+<div align="center">
+
 # Nguyen Cao Ky
 
-**Digital IC Design · RTL Development · FPGA Prototyping · ASIC Physical Design**
+**Digital IC Design · FPGA · ASIC · AI Accelerators · Embedded Systems**
 
-I’m interested in how a hardware architecture becomes a physical design. I work on matrix accelerators and processor RTL, and use simulation, timing reports, and layout to understand what limits a design.
+[Repositories](https://github.com/nguyen-ky2910?tab=repositories) · [GEMM ASIC project site](https://nguyen-ky2910.github.io/WEB_GEMM_ASIC_SKY130/) · [Contribution activity](https://github.com/nguyen-ky2910#contributions-calendar)
 
-[Explore the 3D layout](https://nguyen-ky2910.github.io/WEB_GEMM_32x32_FPGT/?lang=en) · [Read the ASIC signoff report](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130/blob/main/docs/TIEN_DO_SIGNOFF.md) · [Browse repositories](https://github.com/nguyen-ky2910?tab=repositories)
+</div>
 
-## Featured project · 32 × 32 INT8 GEMM accelerator
+## About me
 
-A **weight-stationary compute array** with a Kria KV260 FPGA prototype and a hierarchical SKY130 ASIC implementation. The ASIC version integrates 32 row macros, OpenRAM SRAM macros, and an AXI wrapper.
+I build hardware–software projects around **digital IC design**, **FPGA acceleration**, and **ASIC implementation**. My projects explore **GEMM architectures**, **RISC-V**, and **tensor processing**, from RTL and verification through implementation.
 
-<a href="https://nguyen-ky2910.github.io/WEB_GEMM_32x32_FPGT/?lang=en">
-  <img src="https://raw.githubusercontent.com/nguyen-ky2910/GEMM_ASIC_SKY130/main/docs/paper/figures/layout/chip_full.png" alt="Full-chip layout of the GEMM accelerator on SKY130. Open the interactive 3D layout explorer." width="720" />
-</a>
+## Tech stack & tools
 
-The interactive explorer lets you inspect cells, vias, and routing layers from the project's GDS/DEF.
+**RTL, FPGA & ASIC**
 
-| What the project demonstrates | Evidence |
-| --- | --- |
-| **RTL and FPGA prototyping** | [RTL](https://github.com/nguyen-ky2910/GEMM_32x32_KV260_AI_ACCELERATOR/tree/main/rtl), [testbench](https://github.com/nguyen-ky2910/GEMM_32x32_KV260_AI_ACCELERATOR/tree/main/tb), and [golden model](https://github.com/nguyen-ky2910/GEMM_32x32_KV260_AI_ACCELERATOR/tree/main/golden_model) |
-| **Physical design and ECO** | Hierarchical hardening with OpenLane and incremental antenna repair with OpenROAD. Antenna violations dropped from **446 to 0 pins**. The final checks report **0 Magic DRC errors** and a **matching LVS**. [ECO flow](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130/tree/main/tools/eco) · [Signoff report](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130/blob/main/docs/TIEN_DO_SIGNOFF.md) |
-| **Timing and functional verification** | At **50 MHz**, the v1 post-layout report shows **+1.43 ns setup** and **+0.32 ns hold** slack on internal paths at TT. Gate-level simulation passed **three matrix configurations**. [Timing report](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130/blob/main/docs/TIEN_DO_SIGNOFF.md) · [Waveforms and comparison results](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130/tree/main/docs/evidence) |
+![Verilog RTL](https://img.shields.io/badge/Verilog-RTL-1f3557?style=for-the-badge)
+![AMD Vivado](https://img.shields.io/badge/AMD-Vivado-bd5428?style=for-the-badge&logo=amd)
+![Kria KV260](https://img.shields.io/badge/Kria-KV260-255479?style=for-the-badge)
+![SKY130](https://img.shields.io/badge/ASIC-SKY130-653c8b?style=for-the-badge)
 
-<sub>Timing figures are post-layout STA results at TT. The project report documents SS setup and I/O hold limits separately.</sub>
+**Programming & development**
 
-**One engineering decision.** Full rerouting after antenna fixes kept introducing new violations. The team switched to incremental detailed routing in OpenROAD, then reran signoff checks in the original OpenLane flow. [ECO notes](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130/blob/main/docs/TIEN_DO_SIGNOFF.md)
-
-## EDA tools and design workflow
-
-| Area | Tools and technologies | Focus |
-| --- | --- | --- |
-| **Open-source ASIC** | **OpenLane · OpenROAD · LibreLane · Yosys · SKY130** | Synthesis, hierarchical hardening, placement, CTS, routing, and ECO |
-| **Timing and physical verification** | **OpenSTA · OpenRCX · Magic · Netgen · KLayout · Icarus Verilog** | Parasitic extraction, STA, DRC/LVS, layout comparison, and gate-level simulation |
-| **RTL and FPGA** | **Verilog · AMD Vivado · XSim · Kria KV260** | Datapath design, testbenches, and FPGA prototyping |
-| **Commercial EDA study** | **Cadence Innovus · Synopsys IC Compiler II (ICC2) · PrimeTime** | Place-and-route workflows, setup/hold analysis, clock skew, and timing closure |
-| **Scripting and reference models** | **Python · Tcl · Linux · Git** | Golden models, design-flow scripts, and report analysis |
-
-I’m especially interested in what changes after routing. I look at how parasitics affect setup and hold, where clock skew helps, and how functional, timing, and physical checks can verify an ECO.
-
-## More hardware projects
-
-| Project | Focus | Explore |
-| --- | --- | --- |
-| **[Pipelined RISC-V CPU](https://github.com/nguyen-ky2910/RISC_V_CPU)** | Educational 32-bit, five-stage Verilog core with data forwarding and stage-level testbenches | [Architecture and simulation](https://github.com/nguyen-ky2910/RISC_V_CPU#architecture) |
-| **[8 × 8 × 8 LED cube](https://github.com/nguyen-ky2910/LEDCUBE_8x8x8)** | Hardware control for a 512-LED display | [Repository](https://github.com/nguyen-ky2910/LEDCUBE_8x8x8) |
-
-<details>
-<summary>Experiments and early-stage projects</summary>
-
-- [Mini TPU architecture](https://github.com/nguyen-ky2910/TPU) · Vivado project snapshot for exploring tiling, buffering, and AXI data movement. RTL and testbenches are pending upload.
-- [Voice-controlled robot](https://github.com/nguyen-ky2910/CAR_ROBOT_CONTROL_VOICE_WED) · Embedded control project.
-
-</details>
-
-## GitHub activity
-
-<p align="center">
-  <img src="assets/stats.svg" alt="GitHub statistics" height="160" />
-  <img src="assets/languages.svg" alt="Repository language distribution by code size" height="160" />
+<p>
+  <img alt="C" title="C" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/c/c-original.svg" />&nbsp;&nbsp;
+  <img alt="C++" title="C++" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/cplusplus/cplusplus-original.svg" />&nbsp;&nbsp;
+  <img alt="Python" title="Python" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/python/python-original.svg" />&nbsp;&nbsp;
+  <img alt="Linux" title="Linux" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/linux/linux-original.svg" />&nbsp;&nbsp;
+  <img alt="Git" title="Git" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/git/git-original.svg" />
 </p>
 
-[![Weekly commit counts for GEMM FPGA, GEMM ASIC, and RISC-V CPU](assets/project-activity.svg)](assets/project-activity.json)
+## GitHub at a glance
 
-<img src="assets/contributions-3d.svg" alt="Annual GitHub contribution calendar as a 3D landscape" width="100%" />
-
-<details>
-<summary>Contribution streak</summary>
+<p align="center">
+  <img src="assets/stats.svg" alt="GitHub statistics" height="180" />
+  <img src="assets/languages.svg" alt="Language distribution by code size" height="180" />
+</p>
 
 <p align="center">
   <img src="assets/streak.svg" alt="GitHub contribution streak" width="65%" />
 </p>
 
+<sub>Language share reflects repository code size. Contribution counts and streaks reflect recorded GitHub activity.</sub>
+
+## Repository activity
+
+[![Weekly commit counts for GEMM FPGA, GEMM ASIC, and RISC-V CPU](assets/project-activity.svg)](assets/project-activity.json)
+
+<sub>Commit counts cover each project's default branch, including commits by collaborators.</sub>
+
+## Selected hardware projects
+
+| Project | Focus | Explore |
+| --- | --- | --- |
+| **[GEMM 32×32 on Kria KV260](https://github.com/nguyen-ky2910/GEMM_32x32_KV260_AI_ACCELERATOR)** | FPGA-based matrix multiplication accelerator | [Commits](https://github.com/nguyen-ky2910/GEMM_32x32_KV260_AI_ACCELERATOR/commits/) |
+| **[GEMM ASIC SKY130](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130)** | GEMM accelerator implementation using the SKY130 ASIC flow | [Project site](https://nguyen-ky2910.github.io/WEB_GEMM_ASIC_SKY130/) |
+| **[RISC-V CPU](https://github.com/nguyen-ky2910/RISC_V_CPU)** | RISC-V processor design and RTL development | [Commits](https://github.com/nguyen-ky2910/RISC_V_CPU/commits/) |
+| **[TPU](https://github.com/nguyen-ky2910/TPU)** | Tensor processing and matrix-compute architecture | [Commits](https://github.com/nguyen-ky2910/TPU/commits/) |
+
+<details>
+<summary>More projects</summary>
+
+- [8×8×8 LED Cube](https://github.com/nguyen-ky2910/LEDCUBE_8x8x8) · LED cube control
+- [Voice-controlled car robot](https://github.com/nguyen-ky2910/CAR_ROBOT_CONTROL_VOICE_WED) · Embedded control
+- [GEMM FPGA project website source](https://github.com/nguyen-ky2910/WEB_GEMM_32x32_FPGT)
+
 </details>
 
-<sub>Charts use public GitHub activity and refresh through [GitHub Actions](https://github.com/nguyen-ky2910/nguyen-ky2910/actions/workflows/profile-charts.yml).</sub>
+## Contribution landscape
+
+<img src="assets/contributions-3d.svg" alt="Annual GitHub contribution calendar as a 3D landscape" width="100%" />
+
+<sub>Charts are refreshed daily by [GitHub Actions](https://github.com/nguyen-ky2910/nguyen-ky2910/actions/workflows/profile-charts.yml).</sub>
