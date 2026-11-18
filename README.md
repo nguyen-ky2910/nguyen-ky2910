@@ -4,59 +4,72 @@
 
 **Digital IC Design · FPGA · ASIC · AI Accelerators · Embedded Systems**
 
-[GitHub](https://github.com/nguyen-ky2910) · [Repositories](https://github.com/nguyen-ky2910?tab=repositories)
+[Repositories](https://github.com/nguyen-ky2910?tab=repositories) · [GEMM ASIC project site](https://nguyen-ky2910.github.io/WEB_GEMM_ASIC_SKY130/) · [Contribution activity](https://github.com/nguyen-ky2910#contributions-calendar)
 
 </div>
 
 ## About me
 
-- Working on **digital IC design**, **FPGA acceleration** and **ASIC implementation**
-- Interested in **GEMM architectures**, **RISC-V**, **TPU-style accelerators** and embedded systems
-- Building hardware–software projects from RTL and verification to FPGA/ASIC deployment
+I build hardware–software projects around **digital IC design**, **FPGA acceleration**, and **ASIC implementation**. My projects explore **GEMM architectures**, **RISC-V**, and **tensor processing**, from RTL and verification through implementation.
 
 ## Tech stack & tools
 
+**RTL, FPGA & ASIC**
+
+![Verilog RTL](https://img.shields.io/badge/Verilog-RTL-1f3557?style=for-the-badge)
+![AMD Vivado](https://img.shields.io/badge/AMD-Vivado-bd5428?style=for-the-badge&logo=amd)
+![Kria KV260](https://img.shields.io/badge/Kria-KV260-255479?style=for-the-badge)
+![SKY130](https://img.shields.io/badge/ASIC-SKY130-653c8b?style=for-the-badge)
+
+**Programming & development**
+
 <p>
-  <img src="https://img.shields.io/badge/Verilog-RTL-111827?style=for-the-badge" alt="Verilog" />
-  <img src="https://img.shields.io/badge/FPGA-Design-2563EB?style=for-the-badge" alt="FPGA Design" />
-  <img src="https://img.shields.io/badge/ASIC-SKY130-7C3AED?style=for-the-badge" alt="ASIC SKY130" />
-  <img src="https://img.shields.io/badge/Vivado-Tool-F97316?style=for-the-badge" alt="Vivado" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img alt="C" title="C" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/c/c-original.svg" />&nbsp;&nbsp;
+  <img alt="C++" title="C++" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/cplusplus/cplusplus-original.svg" />&nbsp;&nbsp;
+  <img alt="Python" title="Python" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/python/python-original.svg" />&nbsp;&nbsp;
+  <img alt="Linux" title="Linux" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/linux/linux-original.svg" />&nbsp;&nbsp;
+  <img alt="Git" title="Git" width="36" height="36" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/git/git-original.svg" />
 </p>
 
 ## GitHub at a glance
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nguyen-ky2910&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Nguyen Cao Ky's GitHub statistics" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nguyen-ky2910&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Most used languages" height="180" />
+  <img src="assets/stats.svg" alt="GitHub statistics" height="180" />
+  <img src="assets/languages.svg" alt="Language distribution by code size" height="180" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=nguyen-ky2910&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" width="65%" />
+  <img src="assets/streak.svg" alt="GitHub contribution streak" width="65%" />
 </p>
+
+<sub>Language share reflects repository code size. Contribution counts and streaks reflect recorded GitHub activity.</sub>
 
 ## Repository activity
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=nguyen-ky2910&theme=tokyo-night&hide_border=true&area=true" alt="GitHub activity graph" width="100%" />
+[![Weekly commit counts for GEMM FPGA, GEMM ASIC, and RISC-V CPU](assets/project-activity.svg)](assets/project-activity.json)
+
+<sub>Commit counts cover each project's default branch, including commits by collaborators.</sub>
 
 ## Selected hardware projects
 
-| Project | Focus |
-| --- | --- |
-| **[GEMM 32x32 KV260 AI Accelerator](https://github.com/nguyen-ky2910/GEMM_32x32_KV260_AI_ACCELERATOR)** | FPGA-based 32×32 GEMM accelerator for AMD Kria KV260 |
-| **[GEMM ASIC SKY130](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130)** | GEMM accelerator implementation using the SKY130 ASIC flow |
-| **[RISC-V CPU](https://github.com/nguyen-ky2910/RISC_V_CPU)** | RISC-V processor design and RTL development |
-| **[TPU](https://github.com/nguyen-ky2910/TPU)** | Tensor processing and matrix-compute architecture |
-| **[LED Cube 8x8x8](https://github.com/nguyen-ky2910/LEDCUBE_8x8x8)** | FPGA and embedded control for an 8×8×8 LED cube |
+| Project | Focus | Explore |
+| --- | --- | --- |
+| **[GEMM 32×32 on Kria KV260](https://github.com/nguyen-ky2910/GEMM_32x32_KV260_AI_ACCELERATOR)** | FPGA-based matrix multiplication accelerator | [Commits](https://github.com/nguyen-ky2910/GEMM_32x32_KV260_AI_ACCELERATOR/commits/) |
+| **[GEMM ASIC SKY130](https://github.com/nguyen-ky2910/GEMM_ASIC_SKY130)** | GEMM accelerator implementation using the SKY130 ASIC flow | [Project site](https://nguyen-ky2910.github.io/WEB_GEMM_ASIC_SKY130/) |
+| **[RISC-V CPU](https://github.com/nguyen-ky2910/RISC_V_CPU)** | RISC-V processor design and RTL development | [Commits](https://github.com/nguyen-ky2910/RISC_V_CPU/commits/) |
+| **[TPU](https://github.com/nguyen-ky2910/TPU)** | Tensor processing and matrix-compute architecture | [Commits](https://github.com/nguyen-ky2910/TPU/commits/) |
 
-## Contribution overview
+<details>
+<summary>More projects</summary>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nguyen-ky2910&theme=tokyonight" alt="GitHub contribution overview" width="100%" />
-</p>
+- [8×8×8 LED Cube](https://github.com/nguyen-ky2910/LEDCUBE_8x8x8) · LED cube control
+- [Voice-controlled car robot](https://github.com/nguyen-ky2910/CAR_ROBOT_CONTROL_VOICE_WED) · Embedded control
+- [GEMM FPGA project website source](https://github.com/nguyen-ky2910/WEB_GEMM_32x32_FPGT)
 
-<sub>Charts use public GitHub activity and update automatically.</sub>
+</details>
+
+## Contribution landscape
+
+<img src="assets/contributions-3d.svg" alt="Annual GitHub contribution calendar as a 3D landscape" width="100%" />
+
+<sub>Charts are refreshed daily by [GitHub Actions](https://github.com/nguyen-ky2910/nguyen-ky2910/actions/workflows/profile-charts.yml).</sub>
